@@ -17,6 +17,7 @@
   --forest-green-opaque: #22401eb2;
   --green-tint-white: #e8f7e5;
   --green-tint-opaque:#e8f7e557;
+  --white-opaque: #ffffff8d;
 
   --blue-grey-skies: #77BDD9;
   --blue-grey-skies-opaque: #77bdd97e;
@@ -41,7 +42,7 @@
 
 
 body {       
-  background-image: url('/static/images/homepage_laptop.jpg');
+  background-image: url('../images/homepage_laptop.jpg');
   background-size: cover;
   background-attachment: fixed; 
   background-position: center; 
@@ -75,7 +76,7 @@ header img {
 main {
   min-height: 50vh;
   height: auto;
-  background-color: var(--grey-white-opaque);
+  background-color: var(--white-opaque);
   color: var(--forest-green);
   margin: 5px;
   padding: 20px;
@@ -270,15 +271,24 @@ label {
 }
 button {
   color: var(--light-white-grey);
-  background-color: var(--sunset-orange-opaque);
+  background-color: var(--dark-cyan-blue);
   border: 2px solid var(--light-white-grey);
-  padding: 10px;
+  padding: 10px 20px;
 }
 input {
   color: var(--ocean-opaque);
-  background-color: var(--grey-tint-white);
+  background-color: var(white);
   border: 1px solid var(--dark-blue-opaque);
   padding: 10px;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 select {
   color: var(--dark-cyan-blue);
