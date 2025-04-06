@@ -72,6 +72,20 @@ body::before {
   z-index: -1; 
   pointer-events: none; 
 }
+.activismArt::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../art/woman_rose_crop.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; 
+  z-index: -1; 
+  pointer-events: none; 
+}
 
 header {
   
@@ -459,6 +473,13 @@ object {}
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+}
+.responsive-subtext {
+  background-color: var(--white-opaque);
+  padding: 15px;
+  margin-left: 100px;
+  font-size: clamp(1rem, 2vw, 15rem);
+  color: var(--dark-cyan-blue);
 }
 .floatright {}
 .floatleft {}

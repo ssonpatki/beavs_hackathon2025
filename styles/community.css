@@ -72,6 +72,20 @@ body::before {
   z-index: -1; 
   pointer-events: none; 
 }
+.childhoodColor::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/childhood_color.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; 
+  z-index: -1; 
+  pointer-events: none; 
+}
 
 header {
   
@@ -468,6 +482,13 @@ object {}
 .responsive {
     padding: 6px;
     width: 75%;
+}
+.responsive-subtext {
+  background-color: var(--white-opaque);
+  padding: 15px;
+  margin-left: 100px;
+  font-size: clamp(1rem, 2vw, 15rem);
+  color: var(--dark-cyan-blue);
 }
 .desc {
   font-weight: bold;
