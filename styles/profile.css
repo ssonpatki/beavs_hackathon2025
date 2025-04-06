@@ -91,13 +91,7 @@ header img {
   padding: 20px;
 }
 main {
-  min-height: 50vh;
-  height: auto;
-  background-color: var(--white-opaque);
-  color: var(--forest-green);
-  margin: 5px;
-  padding: 20px;
-  border: 5px;
+
 }
 section {}
 article {}
