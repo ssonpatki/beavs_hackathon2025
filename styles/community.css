@@ -466,9 +466,12 @@ object {}
   
 }
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    padding: 6px;
+    width: 75%;
+}
+.desc {
+  font-weight: bold;
+  margin: 10px 0px;
 }
 .floatright {}
 .floatleft {}
