@@ -91,6 +91,11 @@ article {}
   #topic1 {}
   #topic2 {}
 div {}
+.responsive-text {
+    font-size: clamp(2rem, 10vw, 40rem);
+    font-weight: bold;
+    color: white;
+}
 aside {}
 footer {
   background-color: var(--grey-blue-opaque);
@@ -177,10 +182,16 @@ dt {}
 dd {}
 
 h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+
 h1 {
-  font-size: clamp(2rem, 6vw, 8rem);
+  font-size: clamp(2rem, 10vw, 20rem);
   font-weight: bold;
-  color: var(--grey-tint-white)
+  color: var(--);
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+ 
 }
 h2 {
   font-size: clamp(1.5rem, 3vw, 4rem);
