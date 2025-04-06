@@ -89,6 +89,12 @@ article {}
   #topic1 {}
   #topic2 {}
 div {}
+.mainSection{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px
+}
 aside {}
 footer {
   background-color: var(--grey-blue-opaque);
