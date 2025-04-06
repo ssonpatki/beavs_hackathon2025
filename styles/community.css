@@ -44,7 +44,7 @@
 
 
 body {       
-  background-image: url('');
+  
   background-size: cover;
   background-attachment: fixed; 
   background-position: center; 
@@ -54,8 +54,23 @@ body {
   padding: 4%;
   max-width: 80%;
   min-width: 500px;
-  
+  z-index: 0;
   height: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/community_background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; 
+  z-index: -1; 
+  pointer-events: none; 
 }
 
 header {
@@ -153,24 +168,22 @@ nav {
     
 }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
   
   }
-  
-  /* Change the color of links on hover */
+ 
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the "active" element to highlight the current page */
+  
   .topnav a.active {
     background-color: #2196F3;
     color: white;
   }
   
-  /* Style the search box inside the navigation bar */
+  
   .topnav input[type=text] {
     float: right;
     padding: 6px;
@@ -181,6 +194,9 @@ nav {
     border: 2px solid var(--dark-cyan-blue);
   }
   
+  .topnav button {
+    
+  }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
@@ -236,11 +252,14 @@ li {}
 dt {}
 dd {}
 
-h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: "Bebas Neue", sans-serif;} 
 h1 {
   font-size: clamp(2rem, 6vw, 8rem);
   font-weight: bold;
-  color: var(--grey-tint-white)
+  color: var(--deep-blue-grey)
 }
 h2 {
   font-size: clamp(1.5rem, 3vw, 4rem);
@@ -406,8 +425,8 @@ object {}
 .gallery {
   display: flex;
   flex-flow: row wrap;
-  margin: 0; 
-  padding: 2px;
+  margin: 15px;
+  padding: 10px;
 }
 .gallery figure {
   display: flex;
