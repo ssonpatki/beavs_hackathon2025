@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;}
 h1 {
   font-size: clamp(2rem, 10vw, 20rem);
   font-weight: bold;
-  color: var(--);
+  color: white;
   margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
