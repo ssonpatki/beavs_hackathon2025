@@ -34,6 +34,9 @@
             <input type="text" id="challenge_name" placeholder="Art Challenge Category (optional)">
             <input type="text" id="continent_name" placeholder="Continent (optional)">
             <input type="text" id="nation_name" placeholder="Nation (optional)"></br>
+            <label>
+                <input type="checkbox" id="marketplace">Add to Marketplace
+            </label>
 
             <button type="submit">Add Post</button>
         </form>
@@ -49,7 +52,8 @@
                 art_type: $('#art_type').val().trim(),
                 challenge_name: $('#challenge_name').val().trim(),
                 continent_name: $('#continent_name').val().trim(),
-                nation_name: $('#nation_name').val().trim()
+                nation_name: $('#nation_name').val().trim(),
+                marketplace: $('#is_employee').prop('checked') ? 1 : 0
             };
 
             console.log("🔹 Sending post data:", newPost);  // Debugging

@@ -368,12 +368,12 @@ fieldset {
   background-color: var(--green-tint-opaque);
   border: 
 }
-  legend {
-    color: var(--grey-tint-white);
-    background-color: var(--dark-hunter-opaque);
-    border: 5px solid var(--grey-tint-white);
-    padding: 10px;
-  }
+legend {
+color: var(--grey-tint-white);
+background-color: var(--dark-hunter-opaque);
+border: 5px solid var(--grey-tint-white);
+padding: 10px;
+}
 label {
   display: block;
   color: var(--dark-cyan-blue);

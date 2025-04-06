@@ -51,8 +51,7 @@ body {
   color: var(--dark-cyan-blue);
   font-family: "Playfair Display", serif; 
   margin: 2% auto;
-  padding-left: 80px;
-  padding-right: 10px;
+  padding: 4%;
   max-width: 80%;
   min-width: 500px;
   z-index: 0;
@@ -69,7 +68,7 @@ content: "";
   background-image: url('../images/profile_background.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.6; /* adjust this value (0–1) for transparency level */
+  opacity: 0.7; /* adjust this value (0–1) for transparency level */
   z-index: -1; /* put it behind the content */
   pointer-events: none; /* let user interact with content */
 }
@@ -97,8 +96,7 @@ main {
   background-color: var(--white-opaque);
   color: var(--forest-green);
   margin: 5px;
-  padding-left: 20px;
-  padding-right: 5px;
+  padding: 20px;
   border: 5px;
 }
 section {}
@@ -108,7 +106,7 @@ article {}
 div {}
 .mainSection{
     margin-top: 10px;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-bottom: 10px;
     margin-left: 60px
 }
@@ -197,7 +195,7 @@ nav {
   }
   
   .topnav button {
-    
+
   }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -249,13 +247,23 @@ nav.local a {
 
 p {}
 br {}
-ol, ul, dl {}
-li {}
+ol, ul, dl {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+li {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
 dt {}
 dd {}
 
 h1, h2, h4, h5, h6 {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 30px;
     font-family: "Bebas Neue", sans-serif;} 
 h1 {
@@ -374,8 +382,9 @@ label {
 button {
   color: var(--light-white-grey);
   background-color: var(--dark-cyan-blue);
-  border: 2px solid var(--light-white-grey);
+  border: 2px solid var(--white-grey-opaque);
   padding: 10px 20px;
+  margin-left: 30px;
 }
 input {
   color: var(--ocean-opaque);
