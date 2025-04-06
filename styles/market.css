@@ -65,10 +65,10 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/community_background.jpg');
+  background-image: url('../images/marketplace_background.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.3; 
+  opacity: 0.5; 
   z-index: -1; 
   pointer-events: none; 
 }
@@ -247,24 +247,15 @@ nav.local a {
 
 p {}
 br {}
-ol, ul, dl {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-}
-li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-}
+ol, ul, dl {}
+li {}
 dt {}
 dd {}
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-left: 30px;
-    font-family: "Bebas Neue", sans-serif;
-} 
+    font-family: "Bebas Neue", sans-serif;} 
 h1 {
   font-size: clamp(2rem, 6vw, 8rem);
   font-weight: bold;
@@ -273,7 +264,6 @@ h1 {
 h2 {
   font-size: clamp(1.5rem, 3vw, 4rem);
   color: var(--dark-cyan-blue);
-  margin-top: 30px;
 }
 .mainHeading {
   font-size: clamp(1.5rem, 4vw, 5rem);
