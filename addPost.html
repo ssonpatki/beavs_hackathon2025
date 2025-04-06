@@ -44,27 +44,27 @@
             post.preventDefault();
 
             const newPost = {
-                first_name: $('#first_name').val().trim(),
-                last_name: $('#last_name').val().trim(),
-                email: $('#email').val().trim(),
-                phone_number: $('#phone_number').val().trim(),
-                is_employee: $('#is_employee').prop('checked') ? 1 : 0
+                photo: $('#photo')[0].files[0],
+                name: $('#name').val().trim(),
+                art_type: $('#art_type').val().trim(),
+                challenge_name: $('#challenge_name').val().trim(),
+                continent_name: $('#continent_name').val().trim(),
+                nation_name: $('#nation_name').val().trim()
             };
 
-            console.log("🔹 Sending attendee data:", newAttendee);  // Debugging
+            console.log("🔹 Sending post data:", newPost);  // Debugging
 
             $.ajax({
-                url: '/attendees/api/attendees',
+                url: '/post/api/posts',
                 type: 'POST',
                 contentType: "application/json",
-                data: JSON.stringify(newAttendee),
+                data: JSON.stringify(newPost),
                 success: function() {
-                    alert("✅ Attendee added successfully!");
-                    loadAttendees();
-                    $('#addAttendeeForm')[0].reset();
+                    alert("✅ Post added successfully!");
+                    $('#addPostForm')[0].reset();
                 },
                 error: function(xhr) {
-                    alert("❌ Error adding attendee: " + xhr.responseJSON.error);
+                    alert("❌ Error adding post: " + xhr.responseJSON.error);
                 }
             });
         });
