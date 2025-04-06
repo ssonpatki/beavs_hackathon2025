@@ -93,10 +93,12 @@ header img {
 main {
   min-height: 50vh;
   height: auto;
-  background-color: var(--white-opaque);
+  background-color: rgba(255, 255, 255, 0.84);
   color: var(--forest-green);
   margin: 5px;
-  padding: 20px;
+  padding: 40px;
+  margin-left: 23%;
+  margin-right: 8%;
   border: 5px;
 }
 section {}
@@ -262,7 +264,6 @@ dd {}
 
 h1, h2, h4, h5, h6 {
     margin-top: 10px;
-    margin-left: 30px;
     font-family: "Bebas Neue", sans-serif;
 } 
 h1 {
@@ -277,7 +278,7 @@ h2 {
 }
 .mainHeading {
   font-size: clamp(1.5rem, 4vw, 5rem);
-  color: var(--burnt-orange);
+  color: var(--forest-green)
 }
 h3 {
   color: white;
@@ -399,6 +400,7 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 70%
 }
 select {
   color: var(--dark-cyan-blue);
@@ -410,11 +412,12 @@ select {
   option {}
 textarea {
   color: var(--dark-hunter-green);
-  background-color: var(--grey-tint-white);
-  border: 1px solid var(--dark-blue-opaque);
+  background-color: white;
+  border: 1px solid var(--grey);
   padding: 10px;
-  margin: 10px;
-  width: 100%;
+  margin: 0px;
+  border-radius: 5px;
+  width: 70%;
   box-sizing: border-box;
 }
 output {}

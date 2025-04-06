@@ -20,9 +20,55 @@
         <a href="profile.html"><i class="material-icons">account_circle</i> Profile</a>
     </div>
 
-    <div class="mainSection">
-        <h1>Add Post</h1>
-    </div>
+    <main>
+        <h2 class="mainHeading">
+            <big>New Post</big>
+        </h2>
+
+        <form id="addPostForm">
+            <input type="hidden" id="post_id">
+            <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" /></br>
+            <input type="text" id="name" placeholder="Name" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="text" id="art_type" placeholder="Art Type" required>
+            <input type="text" id="challenge_name" placeholder="Art Challenge Category (optional)">
+            <input type="text" id="continent_name" placeholder="Continent (optional)">
+            <input type="text" id="nation_name" placeholder="Nation (optional)"></br>
+
+            <button type="submit">Add Post</button>
+        </form>
+    </main>
+    <script>
+
+        $('#addPostForm').submit(function(post) {
+            post.preventDefault();
+
+            const newPost = {
+                first_name: $('#first_name').val().trim(),
+                last_name: $('#last_name').val().trim(),
+                email: $('#email').val().trim(),
+                phone_number: $('#phone_number').val().trim(),
+                is_employee: $('#is_employee').prop('checked') ? 1 : 0
+            };
+
+            console.log("🔹 Sending attendee data:", newAttendee);  // Debugging
+
+            $.ajax({
+                url: '/attendees/api/attendees',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify(newAttendee),
+                success: function() {
+                    alert("✅ Attendee added successfully!");
+                    loadAttendees();
+                    $('#addAttendeeForm')[0].reset();
+                },
+                error: function(xhr) {
+                    alert("❌ Error adding attendee: " + xhr.responseJSON.error);
+                }
+            });
+        });
     
+    </script>
 </body>
 </html>
