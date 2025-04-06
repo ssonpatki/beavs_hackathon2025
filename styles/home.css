@@ -181,8 +181,11 @@ li {}
 dt {}
 dd {}
 
-h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
-
+h1, h2, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+h3 {
+    color: white;
+    margin-left: 10px;
+}
 h1 {
   font-size: clamp(2rem, 10vw, 20rem);
   font-weight: bold;
@@ -199,7 +202,6 @@ h2 {
   font-size: clamp(1.5rem, 4vw, 5rem);
   color: var(--burnt-orange);
 }
-h3 {}
 h4 {}
 h5 {}
 h6 {}

@@ -66,10 +66,10 @@ content: "";
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/explore_background.jpg');
+  background-image: url('../images/profile_background.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* adjust this value (0–1) for transparency level */
+  opacity: 0.6; /* adjust this value (0–1) for transparency level */
   z-index: -1; /* put it behind the content */
   pointer-events: none; /* let user interact with content */
 }
@@ -254,7 +254,7 @@ li {}
 dt {}
 dd {}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     margin-top: 10px;
     margin-left: 30px;
     font-family: "Bebas Neue", sans-serif;} 
@@ -271,7 +271,10 @@ h2 {
   font-size: clamp(1.5rem, 4vw, 5rem);
   color: var(--burnt-orange);
 }
-h3 {}
+h3 {
+    color: white;
+    margin-left: 10px;
+}
 h4 {}
 h5 {}
 h6 {}

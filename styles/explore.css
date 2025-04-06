@@ -195,7 +195,7 @@ nav {
   }
   
   .topnav button {
-    
+
   }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -252,7 +252,7 @@ li {}
 dt {}
 dd {}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     margin-top: 10px;
     margin-left: 30px;
     font-family: "Bebas Neue", sans-serif;} 
@@ -269,7 +269,10 @@ h2 {
   font-size: clamp(1.5rem, 4vw, 5rem);
   color: var(--burnt-orange);
 }
-h3 {}
+h3 {
+    color: white;
+    margin-left: 10px;
+}
 h4 {}
 h5 {}
 h6 {}
